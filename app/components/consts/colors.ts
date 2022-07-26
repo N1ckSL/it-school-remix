@@ -1,0 +1,22 @@
+export const COLORS = {
+    oxfordBlue100: 'rgba(25, 30, 48, 1)',
+    oxfordBlue80: 'rgba(25, 30, 48, 0.8)',
+    oxfordBlue60: 'rgba(25, 30, 48, 0.6)',
+    oxfordBlue40: 'rgba(25, 30, 48, 0.4)',
+    oxfordBlue25: 'rgba(25, 30, 48, 0.25)',
+    oxfordBlue20: 'rgba(25, 30, 48, 0.2)',
+    oxfordBlue10: 'rgba(25, 30, 48, 0.1)',
+    oxfordBlue05: 'rgba(25, 30, 48, 0.05)',
+    timberWolf100: 'rgba(202, 205, 193, 1)',
+    timberWolf10: 'rgba(202, 205, 193, 0.1)',
+    spanishViridian: 'rgba(0, 135, 104, 1)',
+    spanishViridian80: 'rgba(0, 135, 104, 0.8)',
+    starCommandBlue: 'rgba(19, 123, 188, 1)',
+    maximumYellow: 'rgba(236, 177, 58, 1)',
+    vermillion: 'rgba(197, 75, 50, 1)',
+    errorRed: 'rgba(237, 67, 56, 1)',
+    vistaWhite: 'rgba(252, 250, 247, 1)',
+    vistaWhite10: 'rgba(252, 250, 247, 0.1)',
+    vistaWhite50: 'rgba(252, 250, 247, 0.5)',
+  };
+  
