@@ -1,40 +1,29 @@
-// import { json } from "@remix-run/node";
-// import { Link, useLoaderData } from "@remix-run/react";
-// import { getPokemons } from "./testApi";
+import { Container } from "./Courses.style";
 
-
-// // type LoaderData = {
-// //   data: Awaited<ReturnType<typeof getPokemons>>;
-// // };
-
-// // export const loader = async () => {
-// //   return json<LoaderData>({
-// //     data: await getPokemons(),
-// //   });
-// // };
-
-// export default function Courses() {
-// //   const { data } = useLoaderData() as LoaderData;
-//   return (
-//     <main className="mx-auto max-w-4xl">
-//       <h1 className="my-6 border-b-2 text-center text-3xl">
-//         Which Pokémon do you want to catch?</h1>
-//       {/* <ul className='mx-auto text-center'>
-//         {data.map((pokemon) => (
-//           <li key={pokemon.name}>
-//             <Link
-//               to={pokemon.name}
-//               className="text-blue-600 underline"
-//             >
-//               {pokemon.name}
-//             </Link>
-//           </li>
-//         ))}
-//       </ul> */}
-//     </main>
-//   );
-// }
+import { Outlet } from "@remix-run/react";
+import { CourseCards } from "./Cards";
 
 export const Courses = () => {
-    return <></>
-}
+  return (
+    <Container className="-z-10 container relative mx-auto w-full px-8 py-14">
+      <div className="max-w-[80%] w-full m-auto">
+        <p className="text-center text-semitransparent mb-4 ">
+          CURSURI IT CU CERTIFICARE PENTRU ÎNCEPĂTORI
+        </p>
+        <h2 className="font-normal text-center text-4xl mb-6 text-primary">
+          From zero to hero. Descoperă programele de pregătire IT School
+        </h2>
+        <p className="text-center text-primary mb-6">
+          Alege din peste 10 cursuri adresate tuturor celor care își doresc un
+          job în domeniul IT
+        </p>
+      </div>
+      <div className="courses w-full relative">
+        <div className="m-auto w-full max-w-[75rem] bg-primary">
+          {/* <Outlet /> */}
+          <CourseCards />
+        </div>
+      </div>
+    </Container>
+  );
+};

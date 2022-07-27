@@ -1,21 +1,53 @@
+import {
+  AdobeIcon,
+  AgileIcon,
+  CPlusPlusIcon,
+  DesignIcon,
+  DotNetIcon,
+  ItIcon,
+  JavaIcon,
+  LinuxIcon,
+  PhotoshopIcon,
+  PythonIcon,
+  SeleniumIcon,
+  TestingIcon,
+  WebDevIcon,
+} from "../UI/SVGs";
+
 export const logosHero = [
   {
     name: "Ministerul Educatiei Nationale",
-    img: "edu",
+    imgUlr: "edu",
   },
   {
     name: "Microsoft",
-    img: "microsoft",
+    imgUlr: "microsoft",
   },
   {
     name: "Adobe",
-    img: "adobe",
+    imgUlr: "adobe",
   },
   {
     name: "Information Technology Specialist",
-    img: "its",
+    imgUlr: "its",
   },
 ];
+
+export const courseIcons = {
+  python: PythonIcon,
+  dotNet: DotNetIcon,
+  java: JavaIcon,
+  cPlusPlus: CPlusPlusIcon,
+  webDev: WebDevIcon,
+  photoshop: PhotoshopIcon,
+  design: DesignIcon,
+  it: ItIcon,
+  agile: AgileIcon,
+  linux: LinuxIcon,
+  testing: TestingIcon,
+  adobe: AdobeIcon,
+  selenium: SeleniumIcon,
+};
 
 export const partners = [
   {

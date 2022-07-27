@@ -4,7 +4,7 @@ import { LAYOUT } from "~/components/consts/layout";
 import { images } from "~/components/imports";
 
 export const Container = styled.section`
- &:before {
+  &:before {
     content: "";
     display: block;
     inset: 0;
@@ -24,5 +24,5 @@ export const Container = styled.section`
         background-size: cover;
       }
     }
-}
+  }
 `;
