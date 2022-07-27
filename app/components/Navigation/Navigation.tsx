@@ -21,7 +21,7 @@ export const Navigation = () => {
               <NavLink
                 key={title}
                 to={path}
-                className="cursor-poiter font-medium text-3xl rounded-3xl px-8 py-4 text-white leading-none hover:bg-link-bg"
+                className="cursor-poiter font-medium text-xl rounded-3xl px-6 py-2 text-white items-center leading-none hover:bg-link-bg"
               >
                 {title}
               </NavLink>
@@ -29,12 +29,12 @@ export const Navigation = () => {
             {dropdown !== undefined && (
               <NavItemDropdown
                 key={title}
-                className="cursor-default flex relative text-white items-center justify-center font-medium text-3xl rounded-3xl px-8 py-4 text-white leading-none"
+                className="cursor-default font-medium text-xl rounded-3xl px-6 py-2 text-white leading-none"
               >
-                <p className="font-medium text-3xl py-4 items-center">
+                <p className="font-medium text-xlitems-center">
                   {title}
                 </p>
-                <NavItemDropdownContainer className="dropdown-container text-white relative flex flex-col w-max top-full l-0 rounded">
+                <NavItemDropdownContainer className="dropdown-container text-white relative flex flex-col w-max top-full left-0 rounded">
                   {dropdown.map((item, idx) => (
                     <NavLink
                       key={idx}

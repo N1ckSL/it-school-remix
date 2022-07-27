@@ -2,7 +2,7 @@ import { logosHero } from "~/components/consts/data";
 
 export const Hero = () => {
   return (
-    <section className="w-full h-[40rem] flex items-start mt-[6rem]">
+    <section className="w-full h-[40rem] flex items-start mt-[16rem]">
       <div className="-z-10 absolute top-0 left-0 w-screen h-[45rem] bg-primary bg-heroImg bg-no-repeat bg-a100 bg-right-bottom bg-fixed">
         <div className="container mx-auto">
           <div className="container ml-auto h-[45rem] flex items-end justify-end px-6 max-w-screen-sm">
@@ -23,16 +23,16 @@ export const Hero = () => {
             Cursuri IT pentru începători cu certificare internațională
           </p>
           <div className="flex">
-            {logosHero.map((logo, idx) => {
+            {logosHero.map((logo, idx) => (
               <div key={idx}>
                 {/* <img
-                  src={require(`./images/${logo.img}.svg`).default.src}
+                  src={require(`../public/images/${logo.img}.svg`)}
                   alt={logo.name}
                 /> */}
                 <h1>{logo.img}</h1> <br />
                 <h2>{logo.name}</h2>
-              </div>;
-            })}
+              </div>
+            ))}
           </div>
         </div>
       </div>

@@ -2,12 +2,12 @@
 module.exports = {
   content: ["./app/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    fontSize: {
-      base: "10px",
-      title: "3rem",
-      subtitle: "3.6rem",
-    },
     extend: {
+      fontSize: {
+        base: "10px",
+        title: "3rem",
+        subtitle: "3.6rem",
+      },
       colors: {
         primary: "rgb(25, 30, 48)",
         "link-bg": "rgba(252, 250, 247, 0.1)",
