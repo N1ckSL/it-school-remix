@@ -21,28 +21,28 @@ import appleBlack from "../../../public/images/apple-black.svg";
 import despre from "../../../public/images/about-image.png";
 
 export const images = {
-  preloader: preloader.src as string,
+  preloader,
 
-  background: background.src as string,
-  backgroundCourses: backgroundCourses.src as string,
-  backgroundBig: backgroundBig.src as string,
-  backgroundMedium: backgroundMedium.src as string,
-  backgroundSmall: backgroundSmall.src as string,
+  background,
+  backgroundCourses,
+  backgroundBig,
+  backgroundMedium,
+  backgroundSmall,
 
-  landingMentor: landingMentor.src as string,
-  alina: alina.src as string,
+  landingMentor,
+  alina,
 
-  edu: edu.src as string,
-  eduBlack: eduBlack.src as string,
-  microsoft: microsoft.src as string,
-  microsoftBlack: microsoftBlack.src as string,
-  adobe: adobe.src as string,
-  adobeBlack: adobeBlack.src as string,
-  its: its.src as string,
-  itsBlack: itsBlack.src as string,
-  appleBlack: appleBlack.src as string,
+  edu,
+  eduBlack,
+  microsoft,
+  microsoftBlack,
+  adobe,
+  adobeBlack,
+  its,
+  itsBlack,
+  appleBlack,
 
-  despre: despre.src as string,
+  despre,
 };
 
 // eu as importa in fiecare fisier imaginea, unde este nevoie

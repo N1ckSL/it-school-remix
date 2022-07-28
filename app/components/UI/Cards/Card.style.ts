@@ -10,7 +10,8 @@ export const Container = styled.div`
   width: 100%;
   max-width: 28rem;
   padding-right: 3rem;
-  height: 37rem;
+  height: 26rem;
+  margin-bottom: 2rem;
   border-radius: 1.6rem;
   box-shadow: 0 2rem 4rem 0 ${COLORS.oxfordBlue10};
   background-color: #fdfdfd;
@@ -53,7 +54,8 @@ export const Cards = styled(Carousel)`
       opacity: 0;
     }
   }
-  > ul {
+  ul {
+    width: 100%;
     display: flex;
   }
   & .dot-list-style {

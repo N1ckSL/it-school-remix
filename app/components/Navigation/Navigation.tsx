@@ -27,14 +27,12 @@ export const Navigation = () => {
               </NavLink>
             )}
             {dropdown !== undefined && (
-              <NavItemDropdown
+              <div
                 key={title}
                 className="cursor-default font-medium text-xl rounded-3xl px-6 py-2 text-white leading-none"
               >
-                <p className="font-medium text-xlitems-center">
-                  {title}
-                </p>
-                <NavItemDropdownContainer className="dropdown-container text-white relative flex flex-col w-max top-full left-0 rounded">
+                <p className="font-medium text-xlitems-center">{title}</p>
+                <div className="text-white relative flex flex-col w-max top-full left-0 rounded">
                   {dropdown.map((item, idx) => (
                     <NavLink
                       key={idx}
@@ -44,8 +42,8 @@ export const Navigation = () => {
                       {item.title}
                     </NavLink>
                   ))}
-                </NavItemDropdownContainer>
-              </NavItemDropdown>
+                </div>
+              </div>
             )}
           </React.Fragment>
         ))}
