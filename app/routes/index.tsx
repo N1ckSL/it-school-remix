@@ -8,11 +8,15 @@ import { Testimonials } from "~/components/sections/Testimonials/Testimonials";
 
 export async function loader() {
   const res = await fetch("https://reqres.in/api/users?page=2");
+
   const faqRes = await fetch("https://jsonplaceholder.typicode.com/posts");
 
-  return json(await res.json());
-  // return json(await res.json());
+  return json({
+    res: await res.json(),
+    faqRes: await faqRes.json(),
+  });
 }
+
 export default function Index() {
   return (
     <Layout>

@@ -17,13 +17,13 @@ export const Card = ({
   link,
   location,
 }: Props) => {
-  const { data } = useLoaderData();
+  const { res } = useLoaderData();
 
-  console.log(data);
+  // console.log(res.data);
 
   return (
     <>
-      {data.map(
+      {res.data.map(
         (el: {
           id: number;
           avatar: string;
@@ -42,7 +42,6 @@ export const Card = ({
                   <img src={el.avatar} alt={el.first_name} />
                 </div>
                 <div className="course-status mr-8">
-                  {/* {CourseIcon && <CourseIcon />} */}
                   {location && (
                     <p className="text-xs relative rounded-xl px-4 py-1 text-green-400 bg-green-100">
                       {location === "Online" ? "Live" + location : location}
