@@ -27,16 +27,17 @@ export const Courses = () => {
         <div className="container flex w-full justify-center mb-20">
           <Button>Vezi toate cursurile</Button>
         </div>
-      </div>
-      <h5 className="text-md text-center font-semibold text-semitransparent mb-10">
-        În parteneriat cu peste 50 companii de renume din România
-      </h5>
-      <div className="grid grid-rows-2 grid-flow-col flex-wrap gap-8 mb-16">
-        {partners.map((partner, idx) => (
-          <div className="flex justify-center" key={idx}>
-            <img src={`./images/${partner.img}.svg`} alt={partner.name} />
-          </div>
-        ))}
+
+        <h5 className="text-md text-center font-semibold text-semitransparent mb-10">
+          În parteneriat cu peste 50 companii de renume din România
+        </h5>
+        <div className="grid grid-rows-6 md:grid-rows-3 lg:grid-rows-2 grid-flow-col flex-wrap gap-8 mb-16">
+          {partners.map((partner, idx) => (
+            <div className="flex justify-center" key={idx}>
+              <img src={`./images/${partner.img}.svg`} alt={partner.name} />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

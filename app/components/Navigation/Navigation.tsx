@@ -1,20 +1,17 @@
 import React from "react";
 import { Link, NavLink } from "@remix-run/react";
 import { NAV } from "../consts/menu";
-import { NavItemDropdown, NavItemDropdownContainer } from "./Navigation.style";
 
 export const Navigation = () => {
   return (
-    <div className="container flex w-full">
-      {/* <div className="logo flex items-center"> */}
+    <div className="container flex w-full ">
       <Link to="/" className="logo flex items-center">
         <div className="max-w-full h-auto">
           <img src="/images/logo-itschool-dark.svg" alt="logo" />
         </div>
       </Link>
-      {/* </div> */}
 
-      <nav className="ml-auto flex items-center">
+      <nav className="ml-auto hidden md:flex items-center">
         {NAV.map(({ title, path, dropdown }, idx) => (
           <React.Fragment key={idx}>
             {path !== undefined && (

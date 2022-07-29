@@ -9,11 +9,11 @@ export const Faq = () => {
   // console.log(dataChunk);
 
   return (
-    <div className="container mx-auto w-full max-w-[80%] pt-10 pb-20">
+    <section className="container mx-auto w-full md:max-w-[80%] pt-10 pb-20">
       <h2 className="text-4xl text-center mb-20">
         Cele mai frecvente întrebări
       </h2>
-      <div className="container w-full mx-auto flex flex-col px-20">
+      <div className="container w-full mx-auto flex flex-col px-4 md:px-20">
         {dataChunk.map(
           (post: {
             id: Key | undefined | string;
@@ -27,6 +27,6 @@ export const Faq = () => {
       <div className="containter flex justify-center">
         <Button>Mai multe</Button>
       </div>
-    </div>
+    </section>
   );
 };
