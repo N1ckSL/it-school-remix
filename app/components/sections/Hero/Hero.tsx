@@ -1,11 +1,11 @@
 import { Link } from "@remix-run/react";
 import { logosHero } from "~/components/consts/data";
-import { Button } from "~/components/UI/Button/Button";
+import { Button, ButtonVariant } from "~/components/UI/Button/Button";
 import { LinkButton } from "~/components/UI/Link/LinkButton";
 
 export const Hero = () => {
   return (
-    <section className="w-full h-[45rem] md:h-[33rem] flex items-start mt-[6rem] md:mt-[12rem]">
+    <section className="container w-full h-[45rem] md:h-[33rem] flex items-start mt-[6rem] md:mt-[12rem]">
       <div className="-z-10 absolute top-0 left-0 w-full h-[51rem] md:h-[45rem] bg-primary bg-heroImg bg-no-repeat bg-a100 bg-right-bottom bg-fixed">
         <div className="container mx-auto">
           <div className="container ml-auto h-[51rem] md:h-[45rem] flex items-end justify-end px-6 max-w-screen-sm">
@@ -17,7 +17,7 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto">
+      <div className="container mx-auto w-full px-[15px]">
         <div className="container justify-start md:w-1/2 flex flex-col">
           <h1 className="text-white font-semibold text-3xl lg:text-title mb-10 leading-tight">
             Acceleratorul de cariere în domeniul IT
@@ -37,7 +37,9 @@ export const Hero = () => {
           </div>
           <div className="container flex">
             <Link to="/cursuri">
-              <Button>Vezi toate cursurile</Button>
+              <Button variant={ButtonVariant.primary}>
+                Vezi toate cursurile
+              </Button>
             </Link>
             <Link to="/certificari" className="flex items-center">
               <LinkButton>Vezi certificarile</LinkButton>

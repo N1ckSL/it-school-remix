@@ -15,7 +15,9 @@ module.exports = {
         semitransparent: "rgba(25, 30, 48, 0.4)",
         "link-bg": "rgba(252, 250, 247, 0.1)",
         "button-primary": "rgb(0, 135, 104)",
+        "button-primary-hover": "rgba(0, 135, 104,0.8)",
         "testi-blue": "rgb(19, 123, 188)",
+        secondary: "rgb(255,0,0)",
       },
       backgroundImage: {
         heroImg: "url('/images/background-big.svg')",
@@ -24,11 +26,11 @@ module.exports = {
       backgroundSize: {
         a100: "auto 100%",
       },
+      borderColor: {
+        secondary: "rgb(0, 135, 104)",
+      },
       height: {
         img80: "80%",
-      },
-      inset: {
-        courses: "0px 0px 0px calc(-50vw + min(600px, 50vw - 3rem))",
       },
     },
   },

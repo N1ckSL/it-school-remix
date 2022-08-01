@@ -1,6 +1,6 @@
-import { useLoaderData } from "@remix-run/react";
+import { Link, useLoaderData } from "@remix-run/react";
 import type { Key } from "react";
-import { Button } from "~/components/UI/Button/Button";
+import { Button, ButtonVariant } from "~/components/UI/Button/Button";
 import { FaqItem } from "./FaqItem";
 
 export const Faq = () => {
@@ -25,7 +25,9 @@ export const Faq = () => {
         )}
       </div>
       <div className="containter flex justify-center">
-        <Button>Mai multe</Button>
+        <Link to={"/faq"}>
+          <Button variant={ButtonVariant.outlined}>Mai multe</Button>
+        </Link>
       </div>
     </section>
   );

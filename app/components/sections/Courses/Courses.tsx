@@ -1,6 +1,7 @@
 import { CourseCards } from "./Cards";
-import { Button } from "~/components/UI/Button/Button";
+import { Button, ButtonVariant } from "~/components/UI/Button/Button";
 import { partners } from "~/components/consts/data";
+import { Link } from "@remix-run/react";
 
 export const Courses = () => {
   return (
@@ -20,12 +21,15 @@ export const Courses = () => {
         </div>
         <div className="courses w-full relative">
           <div className="m-auto w-full max-w-[75rem] mb-12">
-            {/* <Outlet /> */}
             <CourseCards />
           </div>
         </div>
         <div className="container flex w-full justify-center mb-20">
-          <Button>Vezi toate cursurile</Button>
+          <Link to={"/cursuri"}>
+            <Button variant={ButtonVariant.primary}>
+              Vezi toate cursurile
+            </Button>
+          </Link>
         </div>
 
         <h5 className="text-md text-center font-semibold text-semitransparent mb-10">

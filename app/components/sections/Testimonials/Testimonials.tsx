@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { dataTestimoniale } from "~/components/consts/data";
-import { Button } from "~/components/UI/Button/Button";
+import { Button, ButtonVariant } from "~/components/UI/Button/Button";
 import {
   IconComment,
   IconFacebook,
@@ -22,14 +22,16 @@ export const Testimonials = () => {
   return (
     <section className="container w-full max-w-full bg-testi-blue py-24 text-white">
       <div className="container mx-auto w-full flex flex-col md:flex-row justify-between items-start gap-30">
-        <div className="testimoniale__left md:w-[40%] flex flex-col">
+        <div className="testimoniale__left w-full md:w-[40%] flex flex-col pl-[15px]">
           <p className="uppercase mb-4 text-center md:text-left">recenzii</p>
           <h2 className="text-4xl mb-10 text-center md:text-left">
             Nu trebuie să ne crezi pe cuvânt
           </h2>
           <div className="button__wrapper flex flex-col items-center md:items-start w-full mb-10 md:mb-0 md:max-w-[20rem] gap-4">
-            <Button>Vezi ce spun cursanții noștri</Button>
-            <Button>
+            <Button variant={ButtonVariant.whiteOutlined}>
+              Vezi ce spun cursanții noștri
+            </Button>
+            <Button variant={ButtonVariant.whiteOutlined}>
               <IconFacebook /> Vezi mai multe pe Facebook
             </Button>
           </div>

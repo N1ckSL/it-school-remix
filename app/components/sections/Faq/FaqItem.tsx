@@ -19,7 +19,7 @@ export const FaqItem = ({ post }: { post: any }) => {
       </div>
       {isActive && (
         <div className="item__details ml-8 pb-4">
-          <p className=" text-base pt-4 border-t border-zinc-400">
+          <p className="text-base md:text-lg pt-4 border-t border-zinc-400">
             {post.body}
           </p>
         </div>

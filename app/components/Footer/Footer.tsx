@@ -4,9 +4,9 @@ import { FOOTER, MORE, SOCIALS, UTILS } from "../consts/menu";
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="container mx-auto flex flex-col  w-full pt-18 pb-9 px-4 md:px-0">
-      <div className="md:grid md:grid-cols-4 justify-center items-start gap-4">
-        <div className="social__wrapper s w-full flex mb-10 md:mb-0 flex-col order-10 md:order-first">
+    <footer className="container lg:mx-auto flex flex-col w-full pt-18 pb-9 px-4 xxl:px-0">
+      <div className="md:grid md:grid-cols-2 justify-center items-start gap-4">
+        <div className="social__wrapper s lg:w-[70%] flex mb-10 md:mb-0 flex-col order-10 md:order-first lg:pr-20">
           <img
             src="./images/logo-itschool-light.svg"
             alt="itschool-logo"
@@ -30,50 +30,52 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="mb-8 md:mb-0 w-1/2 md:w-full p-0 md:pl-10 inline-block footer__first w-full">
-          <p className="text-semitransparent text-lg md:text-base mb-2 md:mb-4">
-            IT School
-          </p>
-          {FOOTER.map((item, idx) => (
-            <div
-              className="container flex justify-start leading-relaxed"
-              key={idx}
-            >
-              <Link to={item.path} className="hover:text-hover">
-                {item.title}
-              </Link>
-            </div>
-          ))}
-        </div>
-        <div className="mb-8 md:mb-0 w-1/2 md:w-full p-0 md:pl-10 inline-block footer__second w-full">
-          <p className="text-semitransparent text-lg md:text-base mb-2 md:mb-4">
-            Mai mult
-          </p>
-          {MORE.map((item, idx) => (
-            <div
-              className="container flex justify-start leading-relaxed"
-              key={idx}
-            >
-              <a href={item.path} className="hover:text-hover">
-                {item.title}
-              </a>
-            </div>
-          ))}
-        </div>
-        <div className="mb-8 md:mb-0 w-1/2 md:w-full p-0 md:pl-10 inline-block footer__third w-full">
-          <p className="text-semitransparent text-lg md:text-base mb-2 md:mb-4">
-            Utile
-          </p>
-          {UTILS.map((item, idx) => (
-            <div
-              className="container flex justify-start leading-relaxed"
-              key={idx}
-            >
-              <a href={item.path} className="hover:text-hover">
-                {item.title}
-              </a>
-            </div>
-          ))}
+        <div className="footer_cols flex w-full max-w-full ml-[10%] lg:ml-0 items-start md:text-left">
+          <div className="mb-8 md:mb-0 w-1/2 md:w-full p-0 md:pl-10 inline-block footer__first w-full">
+            <p className="text-semitransparent text-lg md:text-base mb-2 md:mb-4">
+              IT School
+            </p>
+            {FOOTER.map((item, idx) => (
+              <div
+                className="container flex justify-start leading-relaxed"
+                key={idx}
+              >
+                <Link to={item.path} className="hover:text-hover">
+                  {item.title}
+                </Link>
+              </div>
+            ))}
+          </div>
+          <div className="mb-8 md:mb-0 w-1/2 md:w-full p-0 md:pl-10 inline-block footer__second w-full">
+            <p className="text-semitransparent text-lg md:text-base mb-2 md:mb-4">
+              Mai mult
+            </p>
+            {MORE.map((item, idx) => (
+              <div
+                className="container flex justify-start leading-relaxed"
+                key={idx}
+              >
+                <a href={item.path} className="hover:text-hover">
+                  {item.title}
+                </a>
+              </div>
+            ))}
+          </div>
+          <div className="mb-8 md:mb-0 w-1/2 md:w-full p-0 md:pl-10 inline-block footer__third w-full">
+            <p className="text-semitransparent text-lg md:text-base mb-2 md:mb-4">
+              Utile
+            </p>
+            {UTILS.map((item, idx) => (
+              <div
+                className="container flex justify-start leading-relaxed"
+                key={idx}
+              >
+                <a href={item.path} className="hover:text-hover">
+                  {item.title}
+                </a>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       <div className="terms w-full flex flex-col md:flex-row items:center justify-center md:justify-between mt-20">
